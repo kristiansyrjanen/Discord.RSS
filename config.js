@@ -19,7 +19,7 @@ config.web.enabled = process.env.DRSS_WEB_ENABLED === 'true' || config.web.enabl
 config.database.redis = process.env.DRSS_REDIS_URI || process.env.REDIS_URL || config.database.redis
 
 // process.env.PORT is intended for use by Heroku
-config.web.port = process.env.DRSS_WEB_PORT || process.env.PORT || config.web.port
+config.web.port = process.env.DRSS_WEB_PORT || process.env.PORT || 3000 || config.web.port
 config.web.redirectUri = process.env.DRSS_WEB_REDIRECT_URI || config.web.redirectUri
 config.web.clientId = process.env.DRSS_WEB_CLIENT_ID || config.web.clientId
 config.web.clientSecret = process.env.DRSS_WEB_CLIENT_SECRET || config.web.clientSecret
